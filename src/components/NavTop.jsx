@@ -2,7 +2,7 @@ import React from "react";
 
 export default function NavTop() {
   return (
-    <nav className="absolute z-10 flex w-[94.2vw] h-[12vh] items-center justify-between px-[4.5vw] left-[5vw]">
+    <nav className="fixed z-10 flex w-[94.2vw] h-[12vh] items-center justify-between px-[4.5vw] left-[5vw]">
       <img
         src="/img/lagunitas-logo.png"
         alt="Lagunitas Logo"
