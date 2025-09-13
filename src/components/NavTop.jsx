@@ -1,10 +1,11 @@
 import React from "react";
+import lagunitasLogo from '../img/lagunitas-logo.png'
 
 export default function NavTop() {
   return (
     <nav className="fixed z-10 flex w-[94.2vw] h-[12vh] items-center justify-between px-[4.5vw] left-[5vw]">
       <img
-        src="/img/lagunitas-logo.png"
+        src={lagunitasLogo}
         alt="Lagunitas Logo"
         className="h-[50px]"
       />
@@ -14,4 +15,4 @@ export default function NavTop() {
       <i className="ri-menu-line text-[2.5vw] hidden"></i>
     </nav>
   );
-}
+}g

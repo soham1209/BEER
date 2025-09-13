@@ -1,5 +1,6 @@
 import React from "react";
 import Texture from "/img/texture.png";
+import YoutubeImage from "/img/youtube_imgae.jpg";
 
 function MounthFeels() {
   return (
@@ -29,7 +30,7 @@ function MounthFeels() {
         <div id="page3_text_part1" className="flex flex-col items-start">
           <a href="#">
             <img
-              src="img/youtube_imgae.jpg"
+              src={YoutubeImage}
               alt="Youtube Thumbnail"
               className="w-[25vw] mt-[3vh]"
             />

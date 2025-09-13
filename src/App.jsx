@@ -6,6 +6,7 @@ import AboutUs from "./components/aboutUs/AboutUs";
 import MounthFeels from "./components/mounthFeels/MounthFeels";
 import WhatWeAre from "./components/whatWeare/WhatWeAre";
 import Availability from "./components/Availability/Availability";
+import ReadMore from "./components/readMore/ReadMore";
 
 
 
@@ -19,6 +20,7 @@ function App() {
       <MounthFeels/>
       <WhatWeAre/>
       <Availability/>
+      <ReadMore/>
       
     </div>
   );
