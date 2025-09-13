@@ -1,0 +1,53 @@
+/* index.css */
+@import "tailwindcss";
+/* Tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* ========== Custom Font Variables ========== */
+:root {
+  --font-anton: 'Anton', sans-serif;
+  --font-dancing: 'Dancing Script', cursive;
+  --font-dosis: 'Dosis', sans-serif;
+}
+
+/* ========== Base Styling ========== */
+html,
+body {
+  @apply bg-white text-gray-800;
+  font-family: var(--font-dosis);
+  scroll-behavior: smooth; /* native smooth scrolling for Locomotive fallback */
+}
+
+/* ========== Utility Layer Overrides ========== */
+@layer utilities {
+  /* Font utilities */
+  .font-anton {
+    font-family: var(--font-anton);
+  }
+  .font-dancing {
+    font-family: var(--font-dancing);
+  }
+  .font-dosis {
+    font-family: var(--font-dosis);
+  }
+
+  /* For sections using Locomotive Scroll container */
+  .locomotive-container {
+    will-change: transform;
+    overflow: hidden;
+  }
+
+  /* Optional helper for fixed nav or anchor targets */
+  .scroll-padding {
+    scroll-padding-top: 5rem;
+  }
+}
+
+/* Optional: style for smooth animations/transitions */
+a,
+button {
+  @apply transition-colors duration-200 ease-in-out;
+}
