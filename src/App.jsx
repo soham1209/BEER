@@ -5,6 +5,7 @@ import Hero from "./components/hero/Hero";
 import AboutUs from "./components/aboutUs/AboutUs";
 import MounthFeels from "./components/mounthFeels/MounthFeels";
 import WhatWeAre from "./components/whatWeare/WhatWeAre";
+import Availability from "./components/Availability/Availability";
 
 
 
@@ -17,6 +18,7 @@ function App() {
       <AboutUs/>
       <MounthFeels/>
       <WhatWeAre/>
+      <Availability/>
       
     </div>
   );

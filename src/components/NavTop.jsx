@@ -11,7 +11,6 @@ export default function NavTop() {
       <button className="px-4 py-2 text-white uppercase font-extrabold text-[20px] leading-6 bg-red-700 cursor-pointer">
         Buy Beer
       </button>
-      {/* Menu icon (hidden on large screens, visible for mobile later) */}
       <i className="ri-menu-line text-[2.5vw] hidden"></i>
     </nav>
   );
