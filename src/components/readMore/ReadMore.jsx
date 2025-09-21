@@ -1,5 +1,5 @@
 import React from "react";
-import ad from './img/ad.jpg'
+import ad from '/img/ad.jpg'
 
 function ReadMore() {
   return (

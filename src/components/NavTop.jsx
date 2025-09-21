@@ -1,5 +1,5 @@
 import React from "react";
-import lagunitasLogo from '../img/lagunitas-logo.png'
+import lagunitasLogo from '/img/lagunitas-logo.png'
 
 export default function NavTop() {
   return (
@@ -15,4 +15,4 @@ export default function NavTop() {
       <i className="ri-menu-line text-[2.5vw] hidden"></i>
     </nav>
   );
-}g
+}

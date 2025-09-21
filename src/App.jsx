@@ -5,9 +5,9 @@ import Hero from "./components/hero/Hero";
 import AboutUs from "./components/aboutUs/AboutUs";
 import MounthFeels from "./components/mounthFeels/MounthFeels";
 import WhatWeAre from "./components/whatWeare/WhatWeAre";
-import Availability from "./components/Availability/Availability";
+import Availability from "./components/availability/Availability";
 import ReadMore from "./components/readMore/ReadMore";
-
+import BottleImage from "./components/BottleImage";
 
 
 function App() {
@@ -15,6 +15,7 @@ function App() {
     <div className="relative overflow-x-hidden">
       <NavTop />
       <NavLeft />
+      <BottleImage />
       <Hero/>
       <AboutUs/>
       <MounthFeels/>
