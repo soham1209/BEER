@@ -1,8 +1,48 @@
 import React from "react";
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
 
 function WhatWeAre() {
+  useGSAP(() => {
+    // Floating animations for each block
+    gsap.to("#page4_color1", {
+      y: -20,
+      duration: 3,
+      repeat: -1,
+      yoyo: true,
+      ease: "sine.inOut",
+    });
+
+    gsap.to("#page4_color2", {
+      y: -25,
+      duration: 4,
+      repeat: -1,
+      yoyo: true,
+      ease: "sine.inOut",
+      delay: 0.5,
+    });
+
+    gsap.to("#page4_color3", {
+      y: -18,
+      duration: 3.5,
+      repeat: -1,
+      yoyo: true,
+      ease: "sine.inOut",
+      delay: 1,
+    });
+
+    // Optional: rotate the Mason jar slowly
+    gsap.to("#page4_color_image4", {
+      rotation: "-22deg",
+      duration: 4,
+      repeat: -1,
+      yoyo: true,
+      ease: "sine.inOut",
+    });
+  }, []);
+
   return (
-    <div id="page4" className="w-screen h-screen flex relative">
+    <div id="page4" className="w-screen h-screen flex relative overflow-hidden">
       {/* Color Block 1 */}
       <div id="page4_color1" className="relative">
         <img

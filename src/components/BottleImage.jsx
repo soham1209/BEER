@@ -15,7 +15,7 @@ export default function BottleImage() {
       scrollTrigger: {
         trigger: ".bottle",
         start: "top 5%",
-        end: "top -427%",
+        end: "top -413%",
         scrub: true,
         pin: true,
       },

@@ -1,21 +1,63 @@
-import React from "react";
-import ad from '/img/ad.jpg'
+import React, { useRef } from "react";
+import ad from "/img/ad.jpg";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+
+
+
 
 function ReadMore() {
+  const containerRef = useRef();
+
+  useGSAP(() => {
+    const ctx = gsap.context(() => {
+      // Image opacity animation
+      gsap.fromTo(
+        "#page6_part1 img",
+        { opacity: 0 },
+        {
+          opacity: 1,
+          duration: 1.5,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: "#page6",
+            start: "top 70%", 
+            toggleActions: "play none none reverse",
+          },
+        }
+      );
+
+      // Text slides up
+      gsap.from("#page6_part2", {
+        y: 50,
+        opacity: 0,
+        duration: 1.2,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: "#page6",
+          start: "top 65%",
+          toggleActions: "play none none reverse",
+        },
+      });
+    });
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <div id="page6" className="w-screen h-[90vh] flex gap pl-[9vw]">
+    <div
+      id="page6"
+      ref={containerRef}
+      className="w-screen h-[90vh] flex gap pl-[9vw]"
+    >
       {/* Image Part */}
-      <div id="page6_part1 " className="w-2/3">
-        <img
-          src={ad}
-          alt=""
-          className=" h-[62vh] object-cover"
-        />
+      <div id="page6_part1" className="w-2/3">
+        <img src={ad} alt="ad" className="h-[62vh] object-cover" />
       </div>
 
       {/* Text Part */}
       <div id="page6_part2" className="flex flex-col w-1/3">
-        <h5 className="font-Gilroy text-[2vmax]">Recipes</h5>
+        <h5 className="font-dancing text-[2vmax]">Recipes</h5>
         <h1 className="mt-[3vh] w-[30vw] font-[Anton] font-thin text-[4vw] leading-[9.5vh] uppercase">
           Beer Speaks. Bellies Grumble.
         </h1>
