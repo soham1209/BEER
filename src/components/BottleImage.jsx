@@ -38,7 +38,7 @@ export default function BottleImage() {
   }, []);
 
   return (
-  <div className="absolute h-[300vh] w-full flex items-center justify-center ml-8">
+  <div className="absolute h-[300vh] w-full flex items-center justify-center ml-8 overflow-hidden">
         {/* gives enough space to scroll */}
         <div className="bottle absolute top-[10vh] flex items-center justify-center h-[90vh] w-[90vh] z-20 ">
           <img src={bottle} alt="Lagunitas Bottle" className="h-full w-auto " />
