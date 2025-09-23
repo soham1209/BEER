@@ -21,7 +21,7 @@ function Hero() {
   });
 
   return (
-    <div id="page1" className="flex flex-col items-center">
+    <div id="page1" className="flex flex-col items-center ">
       <h1 className="top" style={{ backgroundImage: `url(${Texture})` }}>
         unlimited
       </h1>

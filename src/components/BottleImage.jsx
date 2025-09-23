@@ -15,34 +15,33 @@ export default function BottleImage() {
       scrollTrigger: {
         trigger: ".bottle",
         start: "top 10%",
-        end: "top -410%",
+        end: "top -408%",
         scrub: true,
-        pin: true, 
-        pinSpacing: false ,
-        pinType: "transform"
-        
+        pin: true,
+        // pinSpacing: false ,
+        // pinType: "transform"
       },
     });
     gsap.to(".bottle img", {
-      scale: 0.57,
+      scale: 0.55,
       scrollTrigger: {
         trigger: ".bottle",
         start: "top center",
-        end: "top -410%",
+        end: "top -408%",
         scrub: true,
       },
     });
-    window.addEventListener("load", () => {
-      ScrollTrigger.refresh();
-    });
+    // window.addEventListener("load", () => {
+    //   ScrollTrigger.refresh();
+    // });
   }, []);
 
   return (
-  <div className="absolute h-[300vh] w-full flex items-center justify-center ml-8 overflow-hidden">
-        {/* gives enough space to scroll */}
-        <div className="bottle absolute top-[10vh] flex items-center justify-center h-[90vh] w-[90vh] z-20 ">
-          <img src={bottle} alt="Lagunitas Bottle" className="h-full w-auto " />
-        </div>
+    <div className="absolute h-[300vh] w-screen flex items-center justify-center ml-6 ">
+      {/* gives enough space to scroll */}
+      <div className="bottle absolute top-[10vh] flex items-center justify-center h-[90vh] w-[90vh] z-20  ">
+        <img src={bottle} alt="Lagunitas Bottle" className="h-full w-auto " />
       </div>
+    </div>
   );
 }

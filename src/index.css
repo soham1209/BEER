@@ -19,6 +19,7 @@ body {
   @apply bg-white text-gray-800;
   font-family: var(--font-dosis);
   scroll-behavior: smooth; /* native smooth scrolling for Locomotive fallback */
+  overflow-x: hidden; /* prevent horizontal scroll */
 }
 
 /* ========== Utility Layer Overrides ========== */
@@ -33,20 +34,8 @@ body {
   .font-dosis {
     font-family: var(--font-dosis);
   }
-
-  /* For sections using Locomotive Scroll container */
-  .locomotive-container {
-    will-change: transform;
-    overflow: hidden;
-  }
-
-  /* Optional helper for fixed nav or anchor targets */
-  .scroll-padding {
-    scroll-padding-top: 5rem;
-  }
 }
 
-/* Optional: style for smooth animations/transitions */
 a,
 button {
   @apply transition-colors duration-200 ease-in-out;
