@@ -17,7 +17,9 @@ export default function BottleImage() {
         start: "top 10%",
         end: "top -410%",
         scrub: true,
-        // pin: true, 
+        pin: true, 
+        pinSpacing: false ,
+        pinType: "transform"
         
       },
     });
@@ -36,10 +38,10 @@ export default function BottleImage() {
   }, []);
 
   return (
-  <div className="absolute h-[300vh] w-full flex items-center justify-center">
+  <div className="absolute h-[300vh] w-full flex items-center justify-center ml-8">
         {/* gives enough space to scroll */}
-        <div className="bottle absolute left-1/2 top-[10vh] -translate-x-1/2 h-[90vh] w-[90vh] flex items-center justify-center z-20">
-          <img src={bottle} alt="Lagunitas Bottle" className="h-full w-auto" />
+        <div className="bottle absolute top-[10vh] flex items-center justify-center h-[90vh] w-[90vh] z-20 ">
+          <img src={bottle} alt="Lagunitas Bottle" className="h-full w-auto " />
         </div>
       </div>
   );
