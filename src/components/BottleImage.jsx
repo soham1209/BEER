@@ -32,7 +32,7 @@ export default function BottleImage() {
   }, []);
 
   return (
-    <div className="w-screen flex justify-center ">
+    <div className="w-screen flex justify-center ml-6">
       <div className="absolute h-[300vh] ">
         {/* gives enough space to scroll */}
         <div className="bottle absolute left-1/2 top-[10vh] -translate-x-1/2 h-[90vh] w-[90vh] flex items-center justify-center z-20">
