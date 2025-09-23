@@ -15,15 +15,13 @@ export default function BottleImage() {
       scrollTrigger: {
         trigger: ".bottle",
         start: "top 10%",
-        end: "top -408%",
+        end: "top -410%",
         scrub: true,
-        pin: true,
-        // pinSpacing: false ,
-        // pinType: "transform"
+        pin: true,      
       },
     });
     gsap.to(".bottle img", {
-      scale: 0.55,
+      scale: 0.57,
       scrollTrigger: {
         trigger: ".bottle",
         start: "top center",
@@ -31,9 +29,6 @@ export default function BottleImage() {
         scrub: true,
       },
     });
-    // window.addEventListener("load", () => {
-    //   ScrollTrigger.refresh();
-    // });
   }, []);
 
   return (
