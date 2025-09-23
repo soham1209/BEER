@@ -54,11 +54,11 @@ function AboutUs() {
       defaults: { ease: "power3.out" },
     });
 
-    tl.from(".left h3", { x: -150, opacity: 0, duration: 0.1 })
-      .from(".left h1", { x: -150, opacity: 0, duration: 0.1 }, "-=0.4")
-      .from(".left p", { x: -150, opacity: 0, duration: 0.1 }, "-=0.4")
-      .from(".left button", { x: -150, opacity: 0, duration: 0.1 }, "-=0.4")
-      .from(".right", { x: 150, opacity: 0, duration: 0.1 }, "-=0.5");
+    tl.from(".left h3", { x: -100, opacity: 0, duration: 0.8 })
+      .from(".left h1", { x: -100, opacity: 0, duration: 0.8 }, "-=0.4")
+      .from(".left p", { x: -100, opacity: 0, duration: 0.8 }, "-=0.4")
+      .from(".left button", { x: -100, opacity: 0, duration: 0.8 }, "-=0.4")
+      .from(".right", { x: 100, opacity: 0, duration: 1 }, "-=0.5");
   }, []);
 
   return (
