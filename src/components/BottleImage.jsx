@@ -17,7 +17,7 @@ export default function BottleImage() {
         start: "top 10%",
         end: "top -410%",
         scrub: true,
-        pin: true, 
+        // pin: true, 
         
       },
     });
