@@ -8,6 +8,7 @@ export default function NavTop() {
     const navTween = gsap.timeline({
       scrollTrigger: {
         trigger: "nav",
+        // scroller: "#main",
         start: "bottom top",
       },
     });

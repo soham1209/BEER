@@ -3,7 +3,7 @@ import React from "react";
 function Availability() {
   return (
     <div id="page5" className="w-screen">
-      <h5 className="font-dancing text-base  flex justify-center">
+      <h5 className="font-dancing text-base text-[2vmax] flex justify-center">
         Availability
       </h5>
       <h1 className="text-[7vw] font-[Anton] uppercase -mb-18  flex justify-center">

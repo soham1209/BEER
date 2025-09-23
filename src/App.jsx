@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NavTop from "./components/NavTop";
 import NavLeft from "./components/NavLeft";
 import Hero from "./components/hero/Hero";
@@ -10,19 +10,21 @@ import ReadMore from "./components/readMore/ReadMore";
 import BottleImage from "./components/BottleImage";
 
 
+
 function App() {
+  
+
   return (
-    <div className="relative overflow-x-hidden">
+    <div className="overflow-x-hidden" >
       <NavTop />
       <NavLeft />
       <BottleImage />
-      <Hero/>
-      <AboutUs/>
-      <MounthFeels/>
-      <WhatWeAre/>
-      <Availability/>
-      <ReadMore/>
-      
+      <Hero />
+      <AboutUs />
+      <MounthFeels />
+      <WhatWeAre />
+      <Availability />
+      <ReadMore />
     </div>
   );
 }
